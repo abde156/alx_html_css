@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1em;
+  background-color: #f9f9f9;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1em;
+  background-color: #efefef;
+}
+
+header, footer {
+  background-color: #222;
+  color: white;
+  padding: 1em;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  padding: 0;
+}
+
+header li {
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+article, aside {
+  max-height: 100%;
+}
+
+footer {
+  text-align: center;
+}
